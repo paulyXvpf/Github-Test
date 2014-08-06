@@ -1,0 +1,112 @@
+
+
+
+Sub Regal() 
+Dim c As Range 
+Dim SrchRng 
+
+
+'Alt F11 opens VB editor
+'Insert / Module
+'Paste in Code below
+
+
+'Regal Campaign IDs are:
+'106
+'132
+'134
+'138
+'140
+'154
+
+
+'All the other campaign id number rows are deleted, leaving only Regal leads
+'we are deleting other campaigns 52, 118, 114, 38, 63, 142 from the Regal worksheet
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("52", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("118", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("114", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("38", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("63", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("142", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("144", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("124", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+ChDir "C:\Users\Paul\Desktop\Leads"
+    ActiveWorkbook.SaveAs Filename:= _
+        "C:\Users\Paul\Desktop\Leads\Regal.csv", FileFormat:=xlCSV, _
+        CreateBackup:=False
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Columns("J:J").Select
+    Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:=") ", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="-", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+
+
+
+End Sub
+
+
+
+
+
+
+
+

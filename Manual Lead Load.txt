@@ -1,0 +1,846 @@
+****************************
+***** MANUAL LEAD LOAD ***** 
+******* SDLC METHOD ********
+Software Development Method
+****************************
+
+______________________________
+1> Specify Problem Requirements
+2> Analyze the Problem
+3> Design Algorithm to solve problem
+4> Implement the Algorithm
+5> Test and verify completed program
+6> Maintain and update program 
+______________________________
+____________________
+PROBLEM REQUIREMENTS
+____________________
+
+
+
+---------------------
+Application Overview:
+---------------------
+
+Concering the scrub/lead automation:
+
+I'd like to automate prioritzed campaigns, feeding leads
+in between the 2 hour Automation Interval.
+Our Jamaica client has asked for Hand Loads
+of Revitalogic, Regal, Garcinia Max, and others.
+Lets pick one to focus on, Regal
+
+
+-------------------------------
+Write code to do the following:
+-------------------------------
+
+Load leads for targeted campaigns like Regal so I don't have to keep 
+logging into Limelight 20 times per day.
+
+
+---------------------
+System Functions/Goal:
+---------------------
+
+The goal is to reduce the time I spend hand loading
+these campaigns every 2 hours.
+
+Might be able to use Curl to automate browser tasks:
+
+
+
+
+____________________
+ANALYSIS
+____________________
+
+
+Inputs: 
+
+Ouputs:
+
+Process:
+
+
+Variable_Name  Data_Type  Descrip:
+
+
+Functions / Relevant Formulae:
+
+
+____________________
+DESIGN
+____________________
+
+
+Process flow:
+1. log into https://www.the-sales-crm-example.com/admin/login.php
+2. pass username password information
+3. click Clients and Fulfillment (top nav bar)
+4. dropdown to Prospects
+5. click the 'arrow' for advanced searching
+6. set date from: (yesterday example 07/10/2014
+7. set date to: (today example 07/11/2014)
+8. click the search button
+9. 700+ records (sales orders) found
+10. screen only displays 10 at a time
+11. click the 'show' triangle and dropdown to 1000
+12. now all 700 records show
+13. click the 'select all' box at the top
+14. all 700 records now have checks in the boxes
+15. click export CSV
+16. The CSV file contains all 700 sales orders.
+
+
+
+
+
+
+Psuedo Code:
+
+Flow Chart:
+
+Structure Chart:
+
+
+_______________________
+IMPLEMENT THE ALGORITHM
+_______________________
+
+
+
+
+_________________________________
+TEST AND VERIFY COMPLETED PROGRAM
+_________________________________
+
+
+
+___________________________
+MAINTAIN AND UPDATE PROGRAM
+___________________________
+
+
+
+
+
+
+
+-----------------------------
+TEST - Revitalogic Case Study
+-----------------------------
+10:29am EST
+
+
+
+Current Revitagic Leads Loaded into Atmosphere for Sat 6/28/2014:
+TIME RANGE 7:15am - 9:15am EST (2 hour AutoLead Interval)
+--------------------------------------------------
+Revitalogic Cell - Imported from Webservice - 27
+Revitalogic Land - Imported from Webservice = 14
+----------------
+TOTAL - 41 leads
+
+How to Tell if these 41 leads are from the entire night accumualation, or just
+abandons between 7:15am and 9:15am 
+
+
+1. Log into Revitalogic CRM - 
+   Note the Prospects Export (abandons) count: 39 Records found
+   This pulls all accumulated abandons from midnight until this moment at 10:450am
+
+2. Do a Prospects Export CSV dump of website abandons for 6/28/2014 and 
+   scrub these 39 records
+
+   Hand Load 10:50am EST
+   ---------------------
+   Revitalogic Cell - 13 Leads 
+   Revitalogic Land - 14 Leads
+   TOTAL - 27 Leads
+
+3. In theory: 
+   These 27 Leads are website abandons after the last AutoLead run 
+   9:15am EST until now, about 10:50am.
+
+   In observation: 
+   Here what disturbs me. Overnight "Imported from Webservice" 
+   accumulation from Revitalogic Cell/Land was 41 Leads (approx 10:30am EST)
+
+   I came along around 10:50am EST and Hand Loaded 27 more leads.
+  
+   Adding up 41 "Imported Webservice" leads with "27 Fresh Abandon" handloads is  68 prosepects
+
+   Conclusion:
+   -----------
+   Revitalogic Prospects Export should be showing 68 Prospects if the above math check out. 
+   But instead Revitalogic Limelight only shows "Total 46 Records Found" 
+
+
+4: Checking autolead Webservice loads at 11:14am
+ 
+   Revitalogic Cell - 27
+   revitalogic Land - 14
+
+   Regal Cell - 69
+   Regal Land - 28
+
+   Total New Leads (Leads Management - All Lists) 105 Leads
+
+
+5. After AutoLead ran, I checked the lead counts at exactly 11:16am
+
+   Total New Leads (Leads Management - All Lists) 111 Leads
+   According to these numbers here, AutoLead only captured 6 leads across a dozen+ campaigns.
+   Something isn't right, I would think there should be more than 6 leads.
+  
+   11:19am checks on "Imported from Webservice"
+   -------------------------------------------
+   Revitalogic Cell - jumped from 27 to 28
+   revitalogic Land - jumped from 14 to 16 
+   GAINED 3 LEADS
+
+   Regal Cell - jumped 69 to 72 
+   Regal Land - jumped from 28 to 30
+   GAINED 5 LEADS
+
+
+6. Its 11:28 EST right now. I'm going to jump on a Regal Hand load right now.
+   I know the AutoLead robot ran just 15 minutes ago, capturing 5 fresh website abandons.
+
+   So, in theory... I should have almost no fresh Regal leads unless a bunch of visitors 
+   just happen to have abandoned regal.com in the past 15 minutes.
+
+   Regal CRM Prospects Export showing "Total 117 records found" at 11:32am EST
+
+   Regal Cell - Hand load - 26
+   Regal Land - Hand load - 33 
+
+7. OK, the tests are proving out here. Hand loads are delivering leads, and for some
+   reason AutoLead isn't processing right now. 
+
+
+8. 1:12 pm checks on "Imported from Webservice"
+   -------------------------------------------
+   Revitalogic Cell - jumped from 28 to 32
+   revitalogic Land - jumped from 16 to 18
+   GAINED 6 LEADS
+
+   Regal Cell - jumped 72 to 78
+   Regal Land - jumped 30 to 32
+   GAINED 8 LEADS
+
+   Total New Leads (Leads Management - All Lists) 192 Leads
+   According to these numbers here, AutoLead only captured 36 leads across a dozen+ campaigns.
+
+
+
+9. 1:22 pm... Out of curiosity, do a quick Regal hand load and see what numbers we get.
+   In theory, I really shouldn't see many leads at all because the Robot should have taken care
+   of it a few minutes back
+
+   Regal Cell - Hand load - 4
+   Regal Land - Hand load - 10
+
+   This run seems to have checked out. 14 leads trickled in since the last AutoLead run
+   about 20 minutes ago.
+
+
+
+
+********************************
+********************************
+Scripts / Notes / Brainstorming
+********************************
+********************************
+
+
+wget argomarketing.com
+
+curl http://argomarketing.com
+
+submitting data to a website from command line.
+
+curl -n -d status="Curl Hello World"  http://twitter.com/status/update.xml
+
+-n reads the credentials from the .netrc file. 
+
+be sure to protect the .netrc file
+----------
+machine twitter.com login paulyXvpf password 34tdfour5
+---------- 
+Using curl to login to a website that you want to download something 
+from but requires you to login first. 
+
+
+The tutorial says goto the webform form, look at the HTML,
+make note of the Form Action. But the Limelight CRM Login page doesn't 
+have <form action>, its got javascript.
+Anyway... the tutorial says we make note of the input fields, username/pass...
+these are the values that get submitted. 
+
+So once we've gathered that, we use curl to send commands to the website. 
+
+the first curl command we initialize our login form, we do this just to 
+initialize our cookie jar:
+
+Test this with Regal Limelight:
+-------------
+curl --cookie-jar cjar --output /dev/null https://www.rccrm.com/admin/login.php
+-------------
+
+The next command used the cookie jar that we created in the first command, and submits the 
+form values. --location \ tells curl to follow any redirects.
+-------------
+curl --cookie cjar --cookie-jar cjar --data 'name=Nicole' --data 'pass=Argo1234!' --location https://www.rccrm.com/admin/login.php
+-------------
+
+Hmmmm, an HTML page was returned to my SSH screen.
+here is a clue:
+ll(function() {
+        ll('#admin_name, #admin_pass').keypress(function (e) {
+
+
+-------------
+
+
+curl https://www.rccrm.com/admin/login.php
+nicole
+Argo1234!
+  
+
+---------------------
+Monday July 14th 2014
+---------------------
+
+One of the tutorials talks about using Chromes Shift-F12 to get the urls as we 
+log into a website, as you type, the requests shows in the console. 
+
+We need all this when we post things to secure websites.
+
+We can right click, copy as curl
+
+Try it with Revitalogic, since Jamaica happens to be asking about it right now:
+
+https://www.riverbox.net/admin/login.php
+argoadmin
+Argo43210!
+
+
+Google - curl examples retrieving csv files
+
+
+
+
+--------------------
+
+curl https://www.rccrm.com/admin/login.php
+nicole
+Argo1234!
+
+
+
+curl --cookie-jar cjar --output /dev/null https://www.rccrm.com/admin/login.php
+curl --cookie cjar --cookie-jar cjar --data 'name=Nicole' --data 'pass=Argo1234!' --location https://www.rccrm.com/admin/login.php
+
+
+https://www.rccrm.com/admin/dashboard.php
+
+
+Signed up for Stackoverflow to ask this question:
+-------------------------------------------------
+How to use curl for non-interactive repetitive task - Downloading a sales CSV file 20 times per day
+-------------------------------------------------
+
+
+Basic things I've tried to get started. 
+
+1. Launch Google chrome, visit the sales website, and hit F12 to see source code.
+2. Example website https://www.the-sales-crm-example.com/admin/login.php
+3. Source for login.php - look for Username and Password field in the code.
+4. User/Pass looks like javascript embedded in the login.php file
+---------
+ ll(function() {
+        ll('#admin_name, #admin_pass').keypress(function (e) {
+            if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+               document.login.submit();
+            }
+      });
+--------
+
+
+TRYING THIS
+***********
+I'm already kinda falling down here, I'm not sure how I'd pass a username/password into the sales ordering website. 
+I've read about cookie jars, getting lost in YouTube curl tutorials:
+
+curl --cookie-jar cjar --output /dev/null https://www.the-sales-crm-example.com/admin/login.php
+curl --cookie cjar --cookie-jar cjar --data 'name=Chucky' --data 'pass=ZzChuckyZZ' --location https://www.the-sales-crm-example.com/admin/login.php
+***********
+
+Any front to back examples or help would be appreciated, 
+
+Thanks
+
+
+---------------------
+Thursday July 17th 2014
+---------------------
+
+CASE STUDY - REVITALOGIC
+
+1. Get a list lead count from the 2 lists right
+   before the 5:15pm run
+   ----------------------------
+   Revit Cell - WebService - 52
+   Revit Land - WebService - 30 
+   ----------------------------
+
+2. Wait for the automation to kick in 
+   at 5:15pm
+   ----------------------------
+   Revit Cell - WebService - 65
+   Revit Land - WebService - 7
+   ----------------------------
+
+3. Do a Revitalogic Prospects Export: 
+
+4. Load the Prospect Exportcs CSV into the Revitalogic master list.
+
+   Leads Submitted 210
+   Leads Accepted 1
+   Duplicates. 
+
+   The 1 accepted lead looks like a legit lead 
+   count, automation only ran a few minutes ago
+   only allowing time for about 1 lead
+
+
+
+5. Run the soap.php file by hand to see if this 
+   one lead does get scrubed and loaded into 
+   a Revitalogic list:
+
+Revitalogic Master list: 3640075
+Revitalogic Cell list:   3640172
+Revitalogic Land list:   3640171
+
+
+GOAL:
+
+To see if it cuts down on having to scrub the files and load them into the Cell and Land lists. Hopefully this will save time:
+
+CONCLUSION: 
+Just loading a Prospect Export CSV file into the Master List and letting the :15 cron run soap.php does not work. I don't think its srubbed or something. 
+
+
+
+---------------------
+---------------------
+
+Test through all 3 PHP AutoLeads:
+
+1. Make sure the _Scheduled CSV file has arrived on our server waiting to be processed
+
+2. Make sure the Leads table is empty
+
+3. Log into Jamaica Atmosphere as an Agent to see how the screen looks
+
+4. Get a Leads Managment Count:
+   Currently 5:52pm EST Thur 7/17/2014
+   6 Leads
+
+
+5. Get your top performing campaign lead counts, both cell and land
+
+   Revitalogic Cell - Webservice - 65
+   Revitalogic Land - Webservice - 37
+
+   Regal Cell - Webservice - 31
+   Regal Land - Webservice - 10
+
+6. Review the CSV file - actually 2 files have arrived:
+   
+  233895 Jul 17 16:47 _Scheduled_168820140717171419.csv
+  209734 Jul 17 16:05 _Scheduled_784820140717161446.csv
+
+---------------------
+RUNNING THE 3 PHP FILES
+---------------------
+
+7. First run the selectall.php file.
+   This has deleted the _Scheduled files, and the MySQL leads table has populated with leads.
+
+8. Second, run the scrub.php file
+
+9. Third, run the soap.php file
+   
+---------------------
+---------------------
+
+10. Make sure the Leads table has been emptied.
+
+
+11. Check Leads Managment Count again
+
+    Currently 6:50pm EST Thur 7/17/2014
+    85 Leads
+
+12: Review top performing campaign lead counts
+
+   Revitalogic Cell - Webservice - was 65 - now 88 - increase of 23
+   Revitalogic Land - Webservice - was 37 - now - 47 increase of 10
+
+   Regal Cell - Webservice - was 31 - now 33 - increase of 2
+   Regal Land - Webservice - was 10 - now 11 - increase of 1
+
+---------------------
+
+
+
+******************
+THINGS TO FIND OUT
+******************
+
+If leads are running low, I want to be able to trigger my own _Scheduled CSV file. 
+
+1. Stop the cron jobs
+2. Log into Atmosphere
+3. Goto Scheduled jobs and run Automatic Leads
+4. Message will state "job will run in 5 mins"
+5. Its now 7:14pm EST, lets see how long it takes Atmosphere to dump a fresh CSV file into
+our AutoLead directory.
+
+7:25pm EST, 11 minutes went by so far, no CSV file.
+
+The last CSV file is this:
+argomark argomark  252385 Jul 17 17:52 _Scheduled_670220140717181301.csv
+
+7:37pm EST, finally the new _Scheduled CSV file arrived, it took 23 minutes.
+
+I cant be sure if this 7:37 file was triggered by my manual trigger, or if the Hourly job from 
+Atmosphere ran. It looks like my manual request was ignored, because it took 45 minutes 
+like the other jobs tonight.
+
+  252385 Jul 17 17:52 _Scheduled_670220140717181301.csv 
+
+  (45 minute time between delivery)
+
+  273275 Jul 17 18:37 _Scheduled_681020140717191254.csv
+
+
+
+*******************
+_Scheduled LOG FILE
+*******************
+
+209734 Jul 17 16:05 _Scheduled_784820140717161446.csv
+
+Delivery time: 42 minutes 
+
+233895 Jul 17 16:47 _Scheduled_168820140717171419.csv
+
+Delivery time: 65 minutes
+
+252385 Jul 17 17:52 _Scheduled_670220140717181301.csv
+
+Delivery time: 45 minutes 
+(I tried manually running the job about 30 minutes ago
+ it still took the 45 minute time frame)
+
+273275 Jul 17 18:37 _Scheduled_681020140717191254.csv
+
+
+--- AT 7:59 PM EST changed Scheduled Jobs - Automatic Leads to 
+Single run (instead of hourly). Now, run the job and see if it
+comes quicker.
+8:00 PM EST - Running the AutoLead job.
+
+I accidently deleted the job... Arrgghhhh... called Ven, he's recreating it.
+
+
+
+
+**********************
+Tuesday July 22nd 2014
+**********************
+
+Someone on StackOverflow mentioned Chromium Browser Automation, but experice with the software sucks. 
+
+It doesn't stay logged in, it keeps looping at the login page. 
+
+
+I'll try it again with something simple. 
+My Yahoo account. I still don't see what all the hype is with Chromium Broswer Automation. 
+
+Well, one thing I did find is that the Chromium Browser Automation traces the variable easier, so 
+I can hit Shift F12 and follow the code easier. 
+
+
+
+https://www.rccrm.com/admin/login.php
+Nicole
+Argo1234!
+
+
+
+
+************************
+Wednesday July 23rd 2014
+************************
+
+
+Lets chip away at CURL to try and make it happen
+
+Algorithm:
+
+1. Chrome F12 to see source code
+
+2. Set Chromium Browser Automation to "Record"
+
+3. https://www.rccrm.com/admin/login.php
+Nicole
+Argo1234!
+
+4. Go through the login, prospect export steps
+
+5. Notate the next step on the Viso FlowChart.
+
+6. Run the curl script from VPS SSH to test it out. 
+
+
+-------
+-------
+I was watching a Chromium Browser Automation screen. 
+
+He was getting the application to fill out a web form, and at first it didn't work. It stopped at #whatever, same problem I was having. So, the went to the #whatever part of the Browser Automation and then looked at the source code for the page and added it into the Automation, after that it worked. Lets try it.
+
+
+
+Algorithm:
+
+1. Chrome F12 to see source code
+
+2. Set Chromium Browser Automation to "Record"
+
+3. https://www.rccrm.com/admin/login.php
+Nicole
+Argo1234!
+
+The browser automation hangs after this point.
+It successfully fills out Nicole and the password fine, but doesn't move foward to the Dashboard. 
+
+Chromium Browser Automation has the step "form#login div div A.btn.success" which does highlight the "Login Now" button, but doesn't go forward. 
+
+
+I'd suggest checking out that video again, it demonstrated howto log.
+
+
+
+
+
+
+*************************
+*************************
+Saturday, August 2nd, 2014
+*************************
+
+Will try manual lead load process discussed with Ven last week.
+Start with Revitalogic
+
+Algorithm
+---------
+- get the Revitalogic CSV dump from Limelight
+
+- Download one of the _Scheduled files and open it with Excel.
+
+- There are 18 columns to take note of:
+External ID,Scenario ID,Scenario Name,Scenario Description,List ID,Lead ID,Status,Phone Number,User,Complete,List Name,First Name,Last Name,Address 1,City,State,Zip/Postal Code,Email
+
+- Open the Revitalogic CSV dump and copy/paste the columns into the new _Manual_Run_Revitalogic file
+  Make sure the Master List ID is correct, along with customer information. Other columns can be blank
+
+- Now upload the new _Manual_Run_Revitalogic file to the argoadmin.com / AutoLead dirctory
+
+- Launch PHPMyAdmin to make sure the database starts out as empty
+
+- Check the Revitalogic Lead count before I run this _Manual_Run_Revitalogic test
+
+  Revitalogic Cell - Before _Manual_Run - Imported from Webservice - 35
+  Revitalogic Land - Before _Manual_Run - Imported from Webservice - 16
+
+
+- Launch 3 SSH sessions and carefully monitor each PHP scripts that I manully trigger
+
+- run selectall.php
+----check and see if the database gets loaded 
+----it looks like only a couple of customer rows entered
+----my original _Manual_Run CSV file had 50+ Rows, there should have been over 50 leads in the MySQL Leads table
+----I'll try looking over the Excel CSV file and uploading again into the AutoLeads directory
+----It only loads the first 2 rows into into the Leads table, thats it. 
+
+
+- DIDN'T GET THIS FAR  run scrub.php  - check the stacktrace and make sure the program is loading
+- DIDN'T GET THIS FARrun soap.php  - check and see if the leads made it up the Atmosphere Cell and Land lists
+ DIDN'T GET THIS FAR Revitalogic Cell - After _Manual_Run
+ DIDN'T GET THIS FAR Revitalogic Land - After _Manual_Run
+
+
+Well, try taking the _Manual_Run Revitalogic file and putting it up on argomarketinggroup.
+
+
+*******
+The User ID field that will be sees on the Leads Managment screen will say "Manual-Run-Auto" so thats the clue 
+that tells these leads were manually triggered.   
+*******
+
+
+
+*************************
+*************************
+Tuesday, August 3rd, 2014
+*************************
+
+- get the _Scheduled CSV dump from the argomarketinggroup.com server
+
+- put the _Scheduled file onto the argoadmin server
+
+- run it to see if it works
+
+*************************
+*************************
+
+1. Set date range and download the Revitalogic CSV dump from Limelight
+
+2. Process the CSV with sub routine below:
+******************************************
+Sub Revitalogic_Prospect_Export()
+'
+' Revitalogic_Prospect_Export Macro
+'
+'-------------------------------------
+'Alt F11 opens VBA (Visual Basic for Applications) editor
+'Insert / Module
+'Paste in the sub routine
+'Then run the macro which will format the 
+'phone number columns in preparation for Lead Loading
+'
+'
+'What the code is doing is deleting the parenthesis
+'and deleteing space charactors for clean 10 digit numbers
+'-------------------------------------
+
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Columns("J:J").ColumnWidth = 19.71
+    Columns("J:J").Select
+    Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:=") ", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="-", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    ChDir "C:\Users\Paul\Desktop\Leads"
+    ActiveWorkbook.SaveAs Filename:="C:\Users\Paul\Desktop\Leads\Revitalogic.csv", _
+    FileFormat:=xlCSV, CreateBackup:=False
+End Sub
+********************************************
+
+3.  Format the fresh Revitalogic CSV file with these 18 columns:
+
+External ID,Scenario ID,Scenario Name,Scenario Description,List ID,Lead ID,Status,Phone Number,User,Complete,List Name,First Name,Last Name,Address 1,City,State,Zip/Postal Code,Email
+
+Note: The Limelight CSV dump is not formated with these same 18 columns that the Leads database requires, so we need to modify the file so 
+the dataset is accepted by the server
+
+
+4. We now have a Revitalogic CSV dump with prepped phone numbers, and 18 columns ready for Leads database load.
+
+5. First get a Revitalogic Lead count in Atmosphere so I can compare before-and-after lead inventory
+
+Tues 8/15/2014 - 11:43am EST
+---------------------------
+
+Revitalogic_Cell - Imported frow WebService - 38
+Revitalogic_Land - Imported frow WebService - 20
+
+
+
+6. Ok, now that we have our lead counts from WebService, lets go ahead and trigger our own Revitalogic leads:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

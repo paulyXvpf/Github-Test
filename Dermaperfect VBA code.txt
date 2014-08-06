@@ -1,0 +1,576 @@
+
+Sub DermaPerfect() 
+Dim c As Range 
+Dim SrchRng 
+
+
+' Load up this subroutine with these steps
+' Alt F11 opens VB editor
+' Insert / Module
+' Paste in Code
+
+
+'Dermaperfect Campaing IDs are 88, 244, 89, 92, 91, 114, 99, 87
+'All the other campaign id number rows are deleted, leaving only Derm leads
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("328", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("330", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("332", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("326", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("338", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("236", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("125", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("185", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("240", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("124", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("237", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("77", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("128", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("149", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("192", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("196", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("450", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("180", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("225", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("147", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("177", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("179", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("151", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("187", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("189", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("219", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("183", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("161", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("171", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("167", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("173", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("168", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("174", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("454", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("231", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("160", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("172", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("162", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("170", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("278", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("470", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("276", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("126", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("175", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("182", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("145", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("452", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("137", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("143", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("105", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("466", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("181", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("130", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("239", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("280", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("120", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("76", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("164", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("334", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("133", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("131", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("80", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("128", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("344", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("153", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("84", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("340", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("159", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("336", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("274", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("304", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing
+
+
+    ChDir "C:\Users\Paul\Desktop\Leads"
+    ActiveWorkbook.SaveAs Filename:= _
+        "C:\Users\Paul\Desktop\Leads\Dermaperfect.csv", FileFormat:=xlCSV, _
+        CreateBackup:=False
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Columns("J:J").Select
+    Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:=") ", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="-", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+
+
+
+End Sub
+
+
+
+
+
+
+

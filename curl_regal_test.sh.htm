@@ -1,0 +1,4 @@
+#!/bin/sh
+curl --cookie-jar cjar --output /dev/null https://www.rccrm.com/admin/login.php
+
+curl --cookie cjar --cookie-jar cjar --data 'name=Nicole' --data 'pass=Argo1234!' --location https://www.rccrm.com/admin/login.php

@@ -1,0 +1,35 @@
+
+
+Sub Revitalogic_Prospect_Export()
+'
+' Revitalogic_Prospect_Export Macro
+'
+'-------------------------------------
+'Alt F11 opens VBA (Visual Basic for Applications) editor
+'Insert / Module
+'Paste in the sub routine
+'Then run the macro which will format the 
+'phone number columns in preparation for Lead Loading
+'
+'
+'What the code is doing is deleting the parenthesis
+'and deleteing space charactors for clean 10 digit numbers
+'-------------------------------------
+
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Columns("J:J").ColumnWidth = 19.71
+    Columns("J:J").Select
+    Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:=") ", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="-", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    ChDir "C:\Users\Paul\Desktop\Leads"
+    ActiveWorkbook.SaveAs Filename:="C:\Users\Paul\Desktop\Leads\Revitalogic.csv", _
+    FileFormat:=xlCSV, CreateBackup:=False
+End Sub

@@ -1,0 +1,154 @@
+
+**********************
+Friday, July 26th 2104
+**********************
+
+----------------------------------------
+
+Using Macros to automate repetive tasks. 
+
+I format over 30 Excel spreadsheets per day. 
+5 steps per sheet could be 150 mouse clicks. If I automate the 5 steps down to only 1 step, then I'd save 120 mouse clicks. 
+
+120 mouse clicks could represent 10 minutes per day extra work. 
+
+At $12 per hour, ten minutes labor represents $2 per day. Six days, thats $12 per week, thats $600 per year.
+
+----------------------------------------
+----------------------------------------
+
+
+Trying to get website data into Excel using VBA - (Visual Basic for Applications)
+
+In Excel go to developer tab and do a macros recording
+ 
+Macro Name: Revitalogic_Limelight
+
+Goto Data / Select From Web
+
+Put in this information:
+
+https://www.riverbox.net/admin/login.php
+argoreps
+Argo1234!
+
+
+
+***************************************
+Excel Macro to format the lead CSV file
+---------------------------------------
+Algorithm for Revitalogic
+---------------------------------------
+There are over 40 individual keystrokes to format a CSV 
+phone number list.
+
+1. Delete the top row
+2. Delete "(" from column J
+3. Delete ") " from column J
+4. Delete "-" from column J
+5. save As CSV
+6. Name "Revitalogic"
+et cetera
+et cetera
+
+
+
+These steps below only takes 13 steps:
+-------------------------------------
+Open Excel
+Alt F11 opens VB editor
+Insert / Module
+Paste in Code below
+Then run the macro.
+-------------------------------------
+
+
+
+Sub Revitalogic_Prospect_Export()
+'
+' Revitalogic_Prospect_Export Macro
+'
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Columns("J:J").ColumnWidth = 19.71
+    Columns("J:J").Select
+    Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:=") ", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="-", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    ChDir "C:\Users\Paul\Desktop\Leads"
+    ActiveWorkbook.SaveAs Filename:="C:\Users\Paul\Desktop\Leads\Revitalogic.csv", _
+    FileFormat:=xlCSV, CreateBackup:=False
+End Sub
+
+
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+
+
+
+Sub Hydroderm_Prospect_Export()
+'
+' Hydroderm_Prospect_Export Macro
+'
+ActiveWorkbook.SaveAs Filename:="C:\Users\Paul\Desktop\Leads\Hydroderm.csv" _
+        , FileFormat:=xlCSV, CreateBackup:=False
+
+
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Columns("J:J").ColumnWidth = 19.71
+    Columns("J:J").Select
+    Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:=") ", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="-", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    ChDir "C:\Users\Paul\Desktop\Leads"
+    
+End Sub
+
+
+-----------------------------------------
+-----------------------------------------
+-----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

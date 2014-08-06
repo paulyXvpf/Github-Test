@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Page-1" NameU="Page-1">
+			<Shapes>
+				<Shape ID="1" UniqueID="{4208B66A-5BF4-4741-8EEE-9757473CBC1B}" Name="Function / subroutine" NameU="Function / subroutine" Master="0">
+					<Text>
+Analysis / Design / Flowchart
+</Text>
+					<XForm>
+						<PinX Unit="IN">2.332291666666666</PinX>
+						<PinY Unit="IN">14.374999999999995</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="8" UniqueID="{86F38A83-F9C1-45CD-A1B9-1702EDD43352}" Name="Function / subroutine.104" NameU="Function / subroutine.104" Master="0">
+					<Text>Project: ARGO
+Creating a Users Database: Providing a Register Page</Text>
+					<XForm>
+						<PinX Unit="IN">4.525000000000000</PinX>
+						<PinY Unit="IN">14.299999999999997</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{E27F6C1E-C35C-4F8A-9C79-E272FC1295C1}" Name="Function w / invocation.15" NameU="Function w / invocation.15" Master="2">
+					<Text>Software Development Method</Text>
+					<XForm>
+						<PinX Unit="IN">4.400000000000000</PinX>
+						<PinY Unit="IN">13.575000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="21" UniqueID="{1F5C1A97-3744-4E21-BDB0-F8DFF5C060C8}" Name="Function w / invocation.21" NameU="Function w / invocation.21" Master="2">
+					<Text>Problem Requirements</Text>
+					<XForm>
+						<PinX Unit="IN">4.350000000000000</PinX>
+						<PinY Unit="IN">11.949999999999996</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="27" UniqueID="{74EA3933-5509-4BA6-81AD-5127B90010F3}" Name="Function w / invocation.46" NameU="Function w / invocation.46" Master="2">
+					<Text>Analysis</Text>
+					<XForm>
+						<PinX Unit="IN">4.349999999999998</PinX>
+						<PinY Unit="IN">8.818750000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="33" UniqueID="{1CA16DCD-0D5E-4785-BE13-748EF1C6A118}" Name="Function w / invocation.53" NameU="Function w / invocation.53" Master="2">
+					<Text>
+Inputs
+
+User ID 
+First Name
+Last Name
+Email Address
+Password
+Registration Date
+
+
+Outputs 
+
+When login details match then allow access to the site
+
+
+Variable Name / Datatype
+
+User_id		UNSIGNED INT / AUTO_INCREMENT
+First_name	VARCHAR	
+Last_name	VARCHAR	
+Email		UNIQUE
+Pass 		CHAR
+Reg_date		DATETIME
+
+</Text>
+					<XForm>
+						<PinX Unit="IN">4.350000000000000</PinX>
+						<PinY Unit="IN">6.629687500000005</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="39" UniqueID="{C1E61DBF-97D9-46F6-A2BF-E195CD5E146E}" Name="Function w / invocation.75" NameU="Function w / invocation.75" Master="2">
+					<Text>Application Overview:  
+User details will be stored stored in a MySQL database table. Upon first registration visit, their details may be retrieved upon subsequent visits for comparison by a PHP script. 
+
+
+Write program code that will do the following:
+When the user enters login details matching those already stored in the database table the script can allow access to the website. 
+
+
+System Functions / Goal:
+Storing user info, allowing website access.
+</Text>
+					<XForm>
+						<PinX Unit="IN">4.350000000000007</PinX>
+						<PinY Unit="IN">10.484375000000002</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="45" UniqueID="{AB58CB4C-01C7-4078-A87A-9402F8504537}" Name="Function w / invocation.81" NameU="Function w / invocation.81" Master="2">
+					<Text>1. Specify the Problem requirements
+2. Analyze the problem
+3. Design the algorithm to solve the problem
+4. Implement the algorithm
+5. Test and verify the completed program
+6. Maintain and update the program</Text>
+					<XForm>
+						<PinX Unit="IN">4.250000000000001</PinX>
+						<PinY Unit="IN">12.818749999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="51" UniqueID="{756182F6-8B74-414A-8BB5-8DEB363DD372}" Name="Function w / invocation.66" NameU="Function w / invocation.66" Master="2">
+					<Text>Algorithm
+
+Psuedo code:
+
+&gt; Gather inputs / data types
+&gt; Create the MySQL database table
+&gt; Create the PHP script
+&gt; Test out the page
+&gt; Document and publish the steps in Visio doc
+</Text>
+					<XForm>
+						<PinX Unit="IN">4.250000000000000</PinX>
+						<PinY Unit="IN">3.168749999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="57" UniqueID="{35CA0A3D-3632-4030-BBFC-8AEACAF81CAB}" Name="Function w / invocation.51" NameU="Function w / invocation.51" Master="2">
+					<Text>Design</Text>
+					<XForm>
+						<PinX Unit="IN">4.249999999999999</PinX>
+						<PinY Unit="IN">4.268749999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="110" UniqueID="{33C397D6-E935-4E5B-8ADB-3F42E40FD1A2}" Name="Function w / invocation.110" NameU="Function w / invocation.110" Master="2">
+					<Text>Page 1 of 4</Text>
+					<XForm>
+						<PinX Unit="IN">6.300000000000001</PinX>
+						<PinY Unit="IN">14.625000000000002</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="Page-2" NameU="Page-2">
+			<Layer IX="0">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{27A8B7B7-D6B4-4F40-9F9D-96B259819136}" Name="Function / subroutine" NameU="Function / subroutine" Master="0">
+					<Text> PHP/MySQL
+Analysis / Design / Flowchart
+</Text>
+					<XForm>
+						<PinX Unit="IN">2.468005952380953</PinX>
+						<PinY Unit="IN">11.174999999999995</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="69" UniqueID="{D31DFC02-6B17-4258-B2F1-C0121AA138BF}" Name="Function w / invocation.110" NameU="Function w / invocation.110" Master="2">
+					<Text>Page 2 of 4</Text>
+					<XForm>
+						<PinX Unit="IN">6.435714285714287</PinX>
+						<PinY Unit="IN">11.425000000000002</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="7" UniqueID="{F409C4DB-0114-4896-90FA-12C168B86FAE}" Name="Function w / invocation.10" NameU="Function w / invocation.10" Master="2">
+					<Text>Comments</Text>
+					<XForm>
+						<PinX Unit="IN">2.108928571428572</PinX>
+						<PinY Unit="IN">9.937499999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="13" UniqueID="{01A5D3B5-3293-4B64-BA73-4186BAC4D65E}" Name="Function w / invocation.14" NameU="Function w / invocation.14" Master="2">
+					<Text>Code</Text>
+					<XForm>
+						<PinX Unit="IN">6.058928571428572</PinX>
+						<PinY Unit="IN">9.912500000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="19" UniqueID="{FF7ACB14-B128-4760-960B-C595840325B8}" Name="Function w / invocation.45" NameU="Function w / invocation.45" Master="2">
+					<Text>Flowchart</Text>
+					<XForm>
+						<PinX Unit="IN">4.608928571428576</PinX>
+						<PinY Unit="IN">10.399999999999997</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="26" UniqueID="{CF0BF2C1-DD57-4979-B675-FE89EA4A74F1}" Name="Function / subroutine.42" NameU="Function / subroutine.42" Master="0">
+					<Text>The SQL command required to produce this design as a MySQL database table named “users” can be issued at the prompt in MySQL command line.</Text>
+					<XForm>
+						<PinX Unit="IN">2.070709714821429</PinX>
+						<PinY Unit="IN">8.204687500000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="27" UniqueID="{D1CB7996-8385-4F3B-A6E6-DCC129788EF9}" Name="Function / subroutine.27" NameU="Function / subroutine.27" Master="0">
+					<Text>In SSH, type this:
+root@serv01 [/home/argoadmi/scripts]# mysql -u argoadmi_test -pW2dKOsg
+
+((( had to SSH in as root, then change directory above /home/argoadmin, otherwise access denied )))
+
+ 
+Issue command to use the established database:
+Type in &gt;  USE argoadmi_test;
+
+Issue a command to confirm the table format:
+Type in &gt;  EXPLAIN users;</Text>
+					<XForm>
+						<PinX Unit="IN">1.929464285714286</PinX>
+						<PinY Unit="IN">6.504687500000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="28" UniqueID="{CFD6B9FE-4E88-489A-88B0-68465EB0E8D4}" Name="State.103" NameU="State.103" Master="4">
+					<Text>Start MySQL database</Text>
+					<XForm>
+						<PinX Unit="IN">6.050000000000001</PinX>
+						<PinY Unit="IN">9.226562500000002</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="29" UniqueID="{E149F038-01D9-46AE-82F1-CAC4E6959DD0}" Name="Function / subroutine.29" NameU="Function / subroutine.29" Master="0">
+					<Text>CREATE TABLE IF NOT EXISTS users (
+
+user_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+
+first_name VARCHAR(20) NOT NULL,
+
+last_name VARCHAR(40) NOT NULL,
+
+email VARCHAR(60) NOT NULL, 
+
+pass CHAR(40) NOT NULL,
+
+reg_date DATETIME NOT NULL,
+
+PRIMARY KEY ( user_id ),
+
+UNIQUE ( email ));
+
+</Text>
+					<XForm>
+						<PinX Unit="IN">6.051814714375000</PinX>
+						<PinY Unit="IN">6.819531249999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="30" UniqueID="{FEC5D628-1317-4B5B-88B1-89FC34178A10}" Name="Invocation.30" NameU="Invocation.30" Master="3">
+					<XForm>
+						<PinX Unit="IN">6.051434635027770</PinX>
+						<PinY Unit="IN">8.849218749999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="35" UniqueID="{A573C8D3-493A-46B6-8C00-347C77FEE3A6}" Name="Invocation.109" NameU="Invocation.109" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.733928571428572</PinX>
+						<PinY Unit="IN">6.504687500000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="36" UniqueID="{FB830EEB-A857-4335-BB35-616504DCEF8A}" Name="Invocation.8" NameU="Invocation.8" Master="8">
+					<XForm>
+						<PinX Unit="IN">3.801814714374999</PinX>
+						<PinY Unit="IN">8.079687500000002</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{D87C5BC8-23A7-4578-8186-DAA203BD3A39}" Name="Function / subroutine.104" NameU="Function / subroutine.104" Master="0">
+					<Text>Project: ARGO
+Creating a Users Database</Text>
+					<XForm>
+						<PinX Unit="IN">4.650000000000000</PinX>
+						<PinY Unit="IN">11.175000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="25" UniqueID="{B8F91385-C0A1-4598-8172-D0722C4C77F9}" Name="Function / subroutine.25" NameU="Function / subroutine.25" Master="0">
+					<Text>The script defines a PHP variable named “dbc” (database connection) that gets assigned to the value returned by the built-in mysqli_connect() function. </Text>
+					<XForm>
+						<PinX Unit="IN">2.111781143392853</PinX>
+						<PinY Unit="IN">3.329687500000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="31" UniqueID="{998316C5-1C26-4D9D-8714-CEE7832B773D}" Name="Function / subroutine.31" NameU="Function / subroutine.31" Master="0">
+					<Text>This call requires 4 arguments to specify the MySQL user details and the database to connect. 
+
+When the call succeeds the mysqli_connect() function returns an object that represents the connection to the MySQL server. </Text>
+					<XForm>
+						<PinX Unit="IN">2.070535714285714</PinX>
+						<PinY Unit="IN">1.900000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="32" UniqueID="{25910D38-4E5B-40BB-816E-CEE49F5D8A7B}" Name="State.32" NameU="State.32" Master="4">
+					<Text>Start connect_db.php</Text>
+					<XForm>
+						<PinX Unit="IN">6.091071428571427</PinX>
+						<PinY Unit="IN">4.431250000000002</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="33" UniqueID="{0BEE3017-77AF-47FF-B30F-0C58CE2637B0}" Name="Function / subroutine.33" NameU="Function / subroutine.33" Master="0">
+					<Text>&lt;?php
+
+
+
+$dbc =
+
+
+
+
+mysqli_connect('localhost','argoadmi_test','MyVl3L[SKOsg','argoadmi_test')
+
+
+
+
+OR die(mysqli_connect_error());
+
+
+
+
+mysqli_set_charset( $dbc, 'utf-8');
+
+</Text>
+					<XForm>
+						<PinX Unit="IN">6.092886142946426</PinX>
+						<PinY Unit="IN">2.024218749999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="34" UniqueID="{881111FC-90E8-48BE-8E78-20C465957ED2}" Name="Invocation.34" NameU="Invocation.34" Master="3">
+					<XForm>
+						<PinX Unit="IN">6.092506063599196</PinX>
+						<PinY Unit="IN">4.053906249999997</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="37" UniqueID="{F3C7AFE2-9DA5-4F7C-B616-DCE722FC18B3}" Name="Invocation.37" NameU="Invocation.37" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.842886142946427</PinX>
+						<PinY Unit="IN">2.200000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="38" UniqueID="{5638EC21-73F5-4122-9056-9A4668091B5D}" Name="Invocation.38" NameU="Invocation.38" Master="8">
+					<XForm>
+						<PinX Unit="IN">3.799999999999998</PinX>
+						<PinY Unit="IN">3.114843750000000</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="5" Name="Page-3" NameU="Page-3">
+			<Layer IX="0">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{C64FFA4B-B65F-4FC1-8233-68A37E9BF365}" Name="Function / subroutine.40" NameU="Function / subroutine.40" Master="0">
+					<Text>&lt;?php # DISPLAY COMPLETE REGISTRATION PAGE.
+
+
+
+
+$page_title = 'Register' ;
+include ( 'header.html' ) ;
+
+
+
+
+# Check form submitted.
+if ( $_SERVER[ 'REQUEST_METHOD' ] == 'POST' )
+{
+
+
+
+
+
+  # Connect to the database.
+  require ('../connect_db.php'); 
+
+
+
+
+
+
+
+
+
+  
+  # Initialize an error array.
+  $errors = array();
+
+  # Check for a first name.
+  if ( empty( $_POST[ 'first_name' ] ) )
+  { $errors[] = 'Enter your first name.' ; }
+  else
+  { $fn = mysqli_real_escape_string( $dbc, trim( $_POST[ 'first_name' ] ) ) ; }
+
+
+
+
+  # Check for a last name.
+  if (empty( $_POST[ 'last_name' ] ) )
+  { $errors[] = 'Enter your last name.' ; }
+  else
+  { $ln = mysqli_real_escape_string( $dbc, trim( $_POST[ 'last_name' ] ) ) ; }
+
+
+
+
+  # Check for an email address:
+  if ( empty( $_POST[ 'email' ] ) )
+  { $errors[] = 'Enter your email address.'; }
+  else
+  { $e = mysqli_real_escape_string( $dbc, trim( $_POST[ 'email' ] ) ) ; }
+
+
+
+
+
+
+
+
+
+
+
+
+  # Check for a password and matching input passwords.
+  if ( !empty($_POST[ 'pass1' ] ) )
+  {
+    if ( $_POST[ 'pass1' ] != $_POST[ 'pass2' ] )
+    { $errors[] = 'Passwords do not match.' ; }
+    else
+    { $p = mysqli_real_escape_string( $dbc, trim( $_POST[ 'pass1' ] ) ) ; }
+  }
+  else { $errors[] = 'Enter your password.' ; }
+  
+
+</Text>
+					<XForm>
+						<PinX Unit="IN">6.024107142857144</PinX>
+						<PinY Unit="IN">5.962500000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{747BB329-C2C6-47E9-9CB3-915C943AA93B}" Name="Function / subroutine.76" NameU="Function / subroutine.76" Master="0">
+					<Text>Provide a register page</Text>
+					<XForm>
+						<PinX Unit="IN">1.965178571428572</PinX>
+						<PinY Unit="IN">11.374999999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{5708C5D1-90D5-4AD4-A3A8-CD10299EB124}" Name="State.63" NameU="State.63" Master="4">
+					<Text>Start PHP script
+ </Text>
+					<XForm>
+						<PinX Unit="IN">6.031981158605175</PinX>
+						<PinY Unit="IN">12.150000000000002</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="4" UniqueID="{A8542540-7C4C-4CE5-8EC8-C90F1FCD10C7}" Name="Invocation.107" NameU="Invocation.107" Master="3">
+					<XForm>
+						<PinX Unit="IN">6.028044150731160</PinX>
+						<PinY Unit="IN">11.625000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="5" UniqueID="{B2531A1A-2247-42BC-9987-F0739BAB46EA}" Name="Invocation.108" NameU="Invocation.108" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.651339285714286</PinX>
+						<PinY Unit="IN">11.237499999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="6" UniqueID="{10BC29EF-0C34-46B5-A2E8-18D3A55F7EDF}" Name="Function / subroutine.65" NameU="Function / subroutine.65" Master="0">
+					<Text>These statements set the page title and include a page header.</Text>
+					<XForm>
+						<PinX Unit="IN">1.877678571428571</PinX>
+						<PinY Unit="IN">10.624999999999996</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="7" UniqueID="{11D802BF-6FD3-40F0-9996-23BE3772B377}" Name="Invocation.66" NameU="Invocation.66" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.644642857142857</PinX>
+						<PinY Unit="IN">10.562500000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="8" UniqueID="{E8DD734C-ED2F-4522-83E0-A1B02E34DCEC}" Name="Function / subroutine.78" NameU="Function / subroutine.78" Master="0">
+					<Text>Add a conditional test that will only execute the statements it contains if the form as been submitted.
+
+Statements to be inserted here will be connect_db script, all all firstname/lastname stuff.</Text>
+					<XForm>
+						<PinX Unit="IN">1.877678571428571</PinX>
+						<PinY Unit="IN">9.699999999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="9" UniqueID="{6422C91E-B4A8-48A8-AF1C-AC8521E3E3E9}" Name="Invocation.79" NameU="Invocation.79" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.644642857142857</PinX>
+						<PinY Unit="IN">9.750000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="10" UniqueID="{E415C068-E40E-4ED1-858A-C7C7173540CF}" Name="Function / subroutine" NameU="Function / subroutine" Master="0">
+					<Text> PHP/MySQL
+Analysis / Design / Flowchart
+</Text>
+					<XForm>
+						<PinX Unit="IN">2.627827380952381</PinX>
+						<PinY Unit="IN">14.381249999999994</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="11" UniqueID="{5CDC1619-A935-4BF9-AF2F-C91AFBA8C867}" Name="Function w / invocation.110" NameU="Function w / invocation.110" Master="2">
+					<Text>Page 3 of 4</Text>
+					<XForm>
+						<PinX Unit="IN">6.595535714285715</PinX>
+						<PinY Unit="IN">14.631250000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="17" UniqueID="{58CA5BCB-21BE-440D-95EE-AC46B9DFB65C}" Name="Function w / invocation.10" NameU="Function w / invocation.10" Master="2">
+					<Text>Comments</Text>
+					<XForm>
+						<PinX Unit="IN">2.268750000000000</PinX>
+						<PinY Unit="IN">12.949999999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="23" UniqueID="{23956FFC-B16E-405C-95E2-28A5B1C906D1}" Name="Function w / invocation.14" NameU="Function w / invocation.14" Master="2">
+					<Text>Code</Text>
+					<XForm>
+						<PinX Unit="IN">6.218750000000000</PinX>
+						<PinY Unit="IN">12.925000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="29" UniqueID="{1EFDC8FD-1148-4E54-92A5-6B5DE4D93D0D}" Name="Function w / invocation.45" NameU="Function w / invocation.45" Master="2">
+					<Text>Flowchart</Text>
+					<XForm>
+						<PinX Unit="IN">4.768750000000004</PinX>
+						<PinY Unit="IN">13.412499999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="35" UniqueID="{BBBAC3CF-CD8A-4778-97A1-02D3D0DA5938}" Name="Function / subroutine.104" NameU="Function / subroutine.104" Master="0">
+					<Text>Project: ARGO
+Creating a users database: Providing a Register page</Text>
+					<XForm>
+						<PinX Unit="IN">4.800000000000001</PinX>
+						<PinY Unit="IN">14.350000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="36" UniqueID="{C29E88A5-D5DF-463C-AF9B-4783F05E35CA}" Name="Function / subroutine.36" NameU="Function / subroutine.36" Master="0">
+					<Text>Next insert statements to open the database connect. See page 2 for connect.php code.</Text>
+					<XForm>
+						<PinX Unit="IN">1.887500000000000</PinX>
+						<PinY Unit="IN">8.725000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="37" UniqueID="{1DBE404D-02BC-4407-8DC6-23C16B2B13C6}" Name="Invocation.37" NameU="Invocation.37" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.654464285714284</PinX>
+						<PinY Unit="IN">8.662500000000005</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="38" UniqueID="{EA5E3FDA-CB47-45CA-88DD-228538B81B8C}" Name="Function / subroutine.38" NameU="Function / subroutine.38" Master="0">
+					<Text>These statements set the page title and include a page header.</Text>
+					<XForm>
+						<PinX Unit="IN">1.887500000000000</PinX>
+						<PinY Unit="IN">7.825000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="39" UniqueID="{AA5607F1-0B76-4CB3-A59B-A9B67FBE2599}" Name="Invocation.39" NameU="Invocation.39" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.654464285714284</PinX>
+						<PinY Unit="IN">7.762500000000005</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="6" Name="Page-4" NameU="Page-4">
+			<Layer IX="0">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{D2F5E748-9810-42EE-8F07-3AEA7F44D59E}" Name="Function / subroutine.8" NameU="Function / subroutine.8" Master="0">
+					<Text>Upon application launch at argoadmin.com/test, a PHP page displays lastname and description information from the “People” table. 
+</Text>
+					<XForm>
+						<PinX Unit="IN">4.605237681882294</PinX>
+						<PinY Unit="IN">8.699999999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{044737A4-3079-40A7-967F-9A737CAEA84C}" Name="Switch" NameU="Switch" Master="9">
+					<XForm>
+						<PinX Unit="IN">4.489046378980214</PinX>
+						<PinY Unit="IN">7.700000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{EC9863AB-7ECE-400E-A43F-148A0E6C3706}" Name="Function / subroutine.13" NameU="Function / subroutine.13" Master="0">
+					<Text>Include ‘connection.php’;</Text>
+					<XForm>
+						<PinX Unit="IN">1.289046378980216</PinX>
+						<PinY Unit="IN">6.050000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="4" UniqueID="{1C1D055D-00FD-48E4-A659-D716FAA56648}" Name="Sheet.4" NameU="Sheet.4">
+					<XForm>
+						<PinX Unit="IN">7.939046378980216</PinX>
+						<PinY Unit="IN">6.650000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="5" UniqueID="{DD9C5AC2-4DE4-40AC-AEF7-FD1B29D42747}" Name="Function / subroutine.15" NameU="Function / subroutine.15" Master="0">
+					<Text>$query = “SELECT * FROM people”;</Text>
+					<XForm>
+						<PinX Unit="IN">2.671546378980215</PinX>
+						<PinY Unit="IN">6.050000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="6" UniqueID="{B4EA7103-C69F-4B37-BCDF-06AB23814448}" Name="Sheet.6" NameU="Sheet.6">
+					<XForm>
+						<PinX Unit="IN">0.989046378980215</PinX>
+						<PinY Unit="IN">7.675000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="7" UniqueID="{98471831-D1BE-4006-8B45-8BA49219AB7E}" Name="Invocation" NameU="Invocation" Master="3">
+					<XForm>
+						<PinX Unit="IN">0.989046378980215</PinX>
+						<PinY Unit="IN">6.475000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="8" UniqueID="{F04FA20F-E8AB-4432-8969-BC3D23BC6553}" Name="Sheet.8" NameU="Sheet.8">
+					<Text>Click argoadmin.com/test
+
+Reads index.php</Text>
+					<XForm>
+						<PinX Unit="IN">0.897519427914041</PinX>
+						<PinY Unit="IN">7.084722222222227</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="9" UniqueID="{FF90A202-CBE4-4D29-B665-AA38DF31134B}" Name="Sheet.9" NameU="Sheet.9">
+					<XForm>
+						<PinX Unit="IN">1.569046378980216</PinX>
+						<PinY Unit="IN">6.424999999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="10" UniqueID="{93B567ED-9C34-4869-BF55-765153AA8B13}" Name="Invocation.17" NameU="Invocation.17" Master="3">
+					<XForm>
+						<PinX Unit="IN">1.569046378980216</PinX>
+						<PinY Unit="IN">7.600000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="11" UniqueID="{8554730D-B011-4A44-AD3F-CE175E8E9208}" Name="Sheet.11" NameU="Sheet.11">
+					<Text>$dbhost
+$User
+$Pass
+$dname
+$mysq_sel</Text>
+					<XForm>
+						<PinX Unit="IN">1.619860284399509</PinX>
+						<PinY Unit="IN">7.050000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="12" UniqueID="{2055AD8D-F2D1-4560-B877-8F63EFEEA047}" Name="Sheet.12" NameU="Sheet.12">
+					<XForm>
+						<PinX Unit="IN">2.369046378980216</PinX>
+						<PinY Unit="IN">7.150000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="13" UniqueID="{1710FE7F-ACDB-4D06-A83F-64D473F32B7D}" Name="Invocation.25" NameU="Invocation.25" Master="3">
+					<XForm>
+						<PinX Unit="IN">2.369046378980216</PinX>
+						<PinY Unit="IN">6.450000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="14" UniqueID="{4B80F678-2D19-4F3F-AA33-5AB462AD5432}" Name="Sheet.14" NameU="Sheet.14">
+					<XForm>
+						<PinX Unit="IN">2.987142030431255</PinX>
+						<PinY Unit="IN">6.637499999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{751F45BB-1FAC-426E-AB11-EAC2015F9655}" Name="Invocation.27" NameU="Invocation.27" Master="3">
+					<XForm>
+						<PinX Unit="IN">2.989046378980216</PinX>
+						<PinY Unit="IN">7.600000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="16" UniqueID="{7447DCE7-6BD8-4AA7-BA08-FDED078B1835}" Name="Sheet.16" NameU="Sheet.16">
+					<Text>ID
+LastName
+Description</Text>
+					<XForm>
+						<PinX Unit="IN">3.000237681882295</PinX>
+						<PinY Unit="IN">7.249999999999994</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="17" UniqueID="{FEBB18DB-8842-48D0-961E-D46525BBB817}" Name="Function / subroutine.30" NameU="Function / subroutine.30" Master="0">
+					<Text>$result = mysql_query($query);</Text>
+					<XForm>
+						<PinX Unit="IN">3.979046378980216</PinX>
+						<PinY Unit="IN">6.060000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="18" UniqueID="{9A1CFDFD-EF1C-4C11-A1AF-9192BF670FD5}" Name="Sheet.18" NameU="Sheet.18">
+					<XForm>
+						<PinX Unit="IN">4.335237681882294</PinX>
+						<PinY Unit="IN">6.405000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="19" UniqueID="{BC9291CB-75DE-460F-9A0F-B2DF089FB48F}" Name="Sheet.19" NameU="Sheet.19">
+					<XForm>
+						<PinX Unit="IN">3.984046378980216</PinX>
+						<PinY Unit="IN">7.005000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="20" UniqueID="{E1322C01-6B2B-49EB-9FB6-C99C5DF64E40}" Name="Invocation.28" NameU="Invocation.28" Master="3">
+					<XForm>
+						<PinX Unit="IN">4.335237681882294</PinX>
+						<PinY Unit="IN">7.596428571428571</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="21" UniqueID="{C1FD77F3-DE7D-47CB-B3D9-6225428FEFDE}" Name="Function / subroutine.29" NameU="Function / subroutine.29" Master="0">
+					<Text>While($person = mysql_fetch_array($result)) {</Text>
+					<XForm>
+						<PinX Unit="IN">5.339046378980216</PinX>
+						<PinY Unit="IN">6.050000000000005</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="22" UniqueID="{636985B1-6C86-4AE2-BC79-81D1C620A473}" Name="Invocation.31" NameU="Invocation.31" Master="3">
+					<XForm>
+						<PinX Unit="IN">4.989046378980216</PinX>
+						<PinY Unit="IN">6.427500000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="23" UniqueID="{9A119C10-C77D-4234-AB85-78B8B9DA07C3}" Name="Sheet.23" NameU="Sheet.23">
+					<XForm>
+						<PinX Unit="IN">4.989046378980216</PinX>
+						<PinY Unit="IN">7.597499999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="24" UniqueID="{74C54493-5D1A-4EB8-A144-A3A6E685C871}" Name="Invocation.41" NameU="Invocation.41" Master="3">
+					<XForm>
+						<PinX Unit="IN">5.687142030431255</PinX>
+						<PinY Unit="IN">7.597499999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="25" UniqueID="{35173C36-9AF3-4CB2-BA70-0C1C186965A3}" Name="Sheet.25" NameU="Sheet.25">
+					<XForm>
+						<PinX Unit="IN">5.689046378980216</PinX>
+						<PinY Unit="IN">6.425000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="26" UniqueID="{6EA9CC8A-606E-4712-9C06-C8C0D3AA346C}" Name="Sheet.26" NameU="Sheet.26">
+					<XForm>
+						<PinX Unit="IN">5.339046378980216</PinX>
+						<PinY Unit="IN">7.000000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="27" UniqueID="{BA3FEC03-A4F1-4844-A6EF-4BB9FDD0BCA2}" Name="Function / subroutine.48" NameU="Function / subroutine.48" Master="0">
+					<Text>echo “&lt;h3&gt;” . $person[‘LastName’] . “&lt;/h3&gt;”;</Text>
+					<XForm>
+						<PinX Unit="IN">6.749046378980216</PinX>
+						<PinY Unit="IN">6.050000000000005</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="28" UniqueID="{D7D302FF-3B7E-4CEA-B8D8-CD6928B3D68C}" Name="Sheet.28" NameU="Sheet.28">
+					<XForm>
+						<PinX Unit="IN">7.205237681882295</PinX>
+						<PinY Unit="IN">6.400000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="29" UniqueID="{D6FD0834-3E18-484C-A75A-1B474E9B2F26}" Name="Terminator" NameU="Terminator" Master="10">
+					<Text>Start</Text>
+					<XForm>
+						<PinX Unit="IN">0.989046378980215</PinX>
+						<PinY Unit="IN">7.918750000000006</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>Cost</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>Duration</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>Resources</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="30" UniqueID="{D1BC44F3-0F2D-4DF8-8087-85137070ED5F}" Name="Invocation.54" NameU="Invocation.54" Master="3">
+					<XForm>
+						<PinX Unit="IN">4.464046378980216</PinX>
+						<PinY Unit="IN">5.600000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="31" UniqueID="{44B04238-70EF-4633-A1CC-90E5CE8DA88C}" Name="Function / subroutine.56" NameU="Function / subroutine.56" Master="0">
+					<Text>echo “&lt;p&gt;” . $person[‘Description’] . “&lt;/p&gt;”;</Text>
+					<XForm>
+						<PinX Unit="IN">1.289046378980216</PinX>
+						<PinY Unit="IN">3.725000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="32" UniqueID="{16CDD7FA-4B7A-407D-9818-BA3216E4903F}" Name="Sheet.32" NameU="Sheet.32">
+					<XForm>
+						<PinX Unit="IN">0.989046378980216</PinX>
+						<PinY Unit="IN">5.425000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="33" UniqueID="{169C9625-3EB9-4798-A2DF-410E307E2C2D}" Name="Sheet.33" NameU="Sheet.33">
+					<XForm>
+						<PinX Unit="IN">1.289046378980216</PinX>
+						<PinY Unit="IN">4.662500000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="34" UniqueID="{ECCA0C34-688A-4110-B8D1-A83D19811D9F}" Name="Invocation.61" NameU="Invocation.61" Master="3">
+					<XForm>
+						<PinX Unit="IN">0.989046378980215</PinX>
+						<PinY Unit="IN">4.125000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="35" UniqueID="{938B65DF-2291-46F5-B667-BAEC180DEA55}" Name="Function / subroutine.80" NameU="Function / subroutine.80" Master="0">
+					<Text>Output to web page
+
+Yennie
+Yennie prefers open source
+
+Smith Smith prefers .NET architecture
+
+</Text>
+					<XForm>
+						<PinX Unit="IN">7.085237681882294</PinX>
+						<PinY Unit="IN">4.156249999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="36" UniqueID="{EBB9407E-35EC-49A4-9ECA-2D1A2D6B910E}" Name="Invocation.47" NameU="Invocation.47" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.635237681882295</PinX>
+						<PinY Unit="IN">6.430000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="37" UniqueID="{382AAF48-1B57-4F3E-B94A-022FB7D28B37}" Name="Invocation.37" NameU="Invocation.37" Master="3">
+					<XForm>
+						<PinX Unit="IN">6.405237681882294</PinX>
+						<PinY Unit="IN">6.550000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="38" UniqueID="{D6DC0015-A637-4D05-A151-22DCA23E0ED8}" Name="Invocation.49" NameU="Invocation.49" Master="3">
+					<XForm>
+						<PinX Unit="IN">7.205237681882293</PinX>
+						<PinY Unit="IN">7.584375000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="39" UniqueID="{53460ED1-DB77-4ABB-927E-86BD5051E42C}" Name="Sheet.39" NameU="Sheet.39">
+					<XForm>
+						<PinX Unit="IN">6.405237681882294</PinX>
+						<PinY Unit="IN">7.542857142857145</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="40" UniqueID="{6DE3088A-47CB-42D9-87B4-45C771A841F6}" Name="Invocation.56" NameU="Invocation.56" Master="3">
+					<XForm>
+						<PinX Unit="IN">4.208570601859826</PinX>
+						<PinY Unit="IN">5.350000000000004</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="41" UniqueID="{45C60CFB-1E53-46DB-96E0-086C3DD4FA56}" Name="Sheet.41" NameU="Sheet.41">
+					<XForm>
+						<PinX Unit="IN">1.689046378980216</PinX>
+						<PinY Unit="IN">4.062500000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="42" UniqueID="{73F096C9-312F-48A1-8511-D96F785287D1}" Name="Invocation.59" NameU="Invocation.59" Master="3">
+					<XForm>
+						<PinX Unit="IN">1.705237681882295</PinX>
+						<PinY Unit="IN">5.175000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="43" UniqueID="{5CA5A02B-1225-4D3E-BF6D-83FBD39A96F7}" Name="Invocation.64" NameU="Invocation.64" Master="3">
+					<XForm>
+						<PinX Unit="IN">7.135237681882295</PinX>
+						<PinY Unit="IN">5.100000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="44" UniqueID="{D776B1B3-6A80-4844-B1DE-4DDC1327C7E9}" Name="Function / subroutine" NameU="Function / subroutine" Master="0">
+					<Text> PHP/MySQL
+Analysis / Design / Flowchart
+</Text>
+					<XForm>
+						<PinX Unit="IN">2.453243634263247</PinX>
+						<PinY Unit="IN">11.125000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="45" UniqueID="{925DC957-CCA9-4DDD-8B7D-972F5745350F}" Name="Function w / invocation.15" NameU="Function w / invocation.15" Master="2">
+					<Text>Structure Chart</Text>
+					<XForm>
+						<PinX Unit="IN">4.370951967596582</PinX>
+						<PinY Unit="IN">10.399999999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="51" UniqueID="{8A8E79B7-8F9B-4982-962D-53656EBCE3DF}" Name="Function w / invocation.110" NameU="Function w / invocation.110" Master="2">
+					<Text>Page 4 of 4</Text>
+					<XForm>
+						<PinX Unit="IN">6.420951967596581</PinX>
+						<PinY Unit="IN">11.375000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="57" UniqueID="{D21F8BDB-9536-4847-9274-345E8530F1D4}" Name="Function / subroutine.7" NameU="Function / subroutine.7" Master="0">
+					<Text>The Flow Chart represents the sequence of events in a process.
+
+The Structure Chart shows data interchange among different functions and modules.</Text>
+					<XForm>
+						<PinX Unit="IN">4.622737681882294</PinX>
+						<PinY Unit="IN">9.699999999999996</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="58" UniqueID="{0E53F04E-1C2E-47E4-9748-3883E15F9BC3}" Name="Sheet.58" NameU="Sheet.58">
+					<Text>1
+Yennie
+Open Source
+2
+Smith
+.NET</Text>
+					<XForm>
+						<PinX Unit="IN">3.640237681882294</PinX>
+						<PinY Unit="IN">7.050000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="59" UniqueID="{5D16D5EC-D8D7-4FF2-A6C1-F2F720515452}" Name="Sheet.59" NameU="Sheet.59">
+					<XForm>
+						<PinX Unit="IN">3.635237681882295</PinX>
+						<PinY Unit="IN">7.625000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="60" UniqueID="{2FF9491E-1169-4FAD-8093-09A15192561C}" Name="Sheet.60" NameU="Sheet.60">
+					<Text>1
+Yennie
+Open Source
+2
+Smith
+.NET</Text>
+					<XForm>
+						<PinX Unit="IN">4.335237681882296</PinX>
+						<PinY Unit="IN">7.049999999999996</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="61" UniqueID="{030E96CD-9B24-4968-910F-A274CED378BC}" Name="Sheet.61" NameU="Sheet.61">
+					<Text>1
+Yennie
+Open Source
+2
+Smith
+.NET</Text>
+					<XForm>
+						<PinX Unit="IN">4.985237681882294</PinX>
+						<PinY Unit="IN">7.049999999999996</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="62" UniqueID="{3436C2A8-6DED-44BC-8DD8-AE8A94B0D41E}" Name="Sheet.62" NameU="Sheet.62">
+					<Text>1
+Yennie
+Open Source
+2
+Smith
+.NET</Text>
+					<XForm>
+						<PinX Unit="IN">5.690237681882294</PinX>
+						<PinY Unit="IN">7.025000000000001</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="63" UniqueID="{F95B6D0E-27B6-4E51-AF6D-C89C61C9B9E9}" Name="Sheet.63" NameU="Sheet.63">
+					<Text>
+Yennie
+
+</Text>
+					<XForm>
+						<PinX Unit="IN">7.185237681882294</PinX>
+						<PinY Unit="IN">6.749999999999994</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="64" UniqueID="{C87FAFFE-A59F-48F0-AB6A-9ABD4DFD695F}" Name="Sheet.64" NameU="Sheet.64">
+					<Text>Print first record in field LastName</Text>
+					<XForm>
+						<PinX Unit="IN">7.185237681882294</PinX>
+						<PinY Unit="IN">7.199999999999993</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="65" UniqueID="{BEC13078-3835-4D46-B7DC-56C5609BD671}" Name="Sheet.65" NameU="Sheet.65">
+					<Text>
+From array:
+1st pass 
+Yennie
+
+</Text>
+					<XForm>
+						<PinX Unit="IN">6.385237681882293</PinX>
+						<PinY Unit="IN">7.000000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="66" UniqueID="{6045EF22-2748-4A6E-A89F-5F5A7E0A29D2}" Name="Sheet.66" NameU="Sheet.66">
+					<Text>Print first record in field Description
+Yennie prefers open source
+</Text>
+					<XForm>
+						<PinX Unit="IN">1.685237681882295</PinX>
+						<PinY Unit="IN">4.449999999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="67" UniqueID="{7BD3C792-FAA6-4E52-8A30-BD2EF73A7D4F}" Name="Sheet.67" NameU="Sheet.67">
+					<Text>From array: 1st pass
+Yennie prefers open source</Text>
+					<XForm>
+						<PinX Unit="IN">0.885237681882294</PinX>
+						<PinY Unit="IN">4.799999999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="68" UniqueID="{2DEB5A83-64C9-4CBD-B3DC-940400B66513}" Name="Sheet.68" NameU="Sheet.68">
+					<Text>From array: 2nd pass
+Smith</Text>
+					<XForm>
+						<PinX Unit="IN">2.535237681882294</PinX>
+						<PinY Unit="IN">4.650000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="69" UniqueID="{F857ED4F-BB2A-477B-BE08-0AC524E2E683}" Name="Invocation.69" NameU="Invocation.69" Master="3">
+					<XForm>
+						<PinX Unit="IN">2.535237681882295</PinX>
+						<PinY Unit="IN">4.149999999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="70" UniqueID="{36CED3AC-B002-4E66-A830-F520F5B07F9F}" Name="Sheet.70" NameU="Sheet.70">
+					<XForm>
+						<PinX Unit="IN">2.935237681882295</PinX>
+						<PinY Unit="IN">4.662500000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="71" UniqueID="{958D093C-EF15-4767-9709-550749502A11}" Name="Sheet.71" NameU="Sheet.71">
+					<XForm>
+						<PinX Unit="IN">2.535237681882294</PinX>
+						<PinY Unit="IN">5.174999999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="72" UniqueID="{4E3C68EE-DB2D-4790-A541-E5A5E7AFE452}" Name="Function / subroutine.76" NameU="Function / subroutine.76" Master="0">
+					<Text>echo “&lt;h3&gt;” . $person[‘LastName’] . “&lt;/h3&gt;”;</Text>
+					<XForm>
+						<PinX Unit="IN">2.935237681882296</PinX>
+						<PinY Unit="IN">3.725000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="73" UniqueID="{E8FD5330-6354-4423-B014-2CD196B97068}" Name="Sheet.73" NameU="Sheet.73">
+					<Text>Print 2nd record in field LastName
+Smith</Text>
+					<XForm>
+						<PinX Unit="IN">3.335237681882294</PinX>
+						<PinY Unit="IN">4.600000000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="74" UniqueID="{EB3F479D-F54C-4F6B-B8B3-94F8D7BD9418}" Name="Sheet.74" NameU="Sheet.74">
+					<XForm>
+						<PinX Unit="IN">3.335237681882295</PinX>
+						<PinY Unit="IN">4.087499999999995</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="75" UniqueID="{2D4C5774-129E-4ED6-B46D-D2E2E32EDE20}" Name="Invocation.75" NameU="Invocation.75" Master="3">
+					<XForm>
+						<PinX Unit="IN">3.335237681882294</PinX>
+						<PinY Unit="IN">5.175000000000003</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="76" UniqueID="{120B376A-AA70-4B47-ABB2-756DD8EB0CA4}" Name="Sheet.76" NameU="Sheet.76">
+					<Text>From array: 2nd pass
+Smith prefers .NET architecture</Text>
+					<XForm>
+						<PinX Unit="IN">4.335237681882294</PinX>
+						<PinY Unit="IN">4.637499999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="77" UniqueID="{34AE78AE-2DD4-4FEC-B170-5AE4C152531B}" Name="Invocation.84" NameU="Invocation.84" Master="3">
+					<XForm>
+						<PinX Unit="IN">4.335237681882294</PinX>
+						<PinY Unit="IN">4.093749999999998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="78" UniqueID="{BF727984-AD8E-4FAA-8E22-50CA3EE4576C}" Name="Sheet.78" NameU="Sheet.78">
+					<XForm>
+						<PinX Unit="IN">4.335237681882294</PinX>
+						<PinY Unit="IN">5.243750000000000</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="79" UniqueID="{F649FD0B-3580-42D6-BBC4-C29472FA45C9}" Name="Sheet.79" NameU="Sheet.79">
+					<XForm>
+						<PinX Unit="IN">4.735237681882297</PinX>
+						<PinY Unit="IN">4.671428571428569</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="80" UniqueID="{FD92824F-A460-4450-B1D9-DB202C263DF5}" Name="Sheet.80" NameU="Sheet.80">
+					<Text>Print 2nd record in field Description
+Smith prefers .NET architecture</Text>
+					<XForm>
+						<PinX Unit="IN">5.135237681882295</PinX>
+						<PinY Unit="IN">4.649999999999997</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="81" UniqueID="{9A8416D7-DBC9-4D96-AABA-1659BC9DE994}" Name="Sheet.81" NameU="Sheet.81">
+					<XForm>
+						<PinX Unit="IN">5.135237681882298</PinX>
+						<PinY Unit="IN">4.052678571428569</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="82" UniqueID="{AC3A245D-EB57-40C6-BF3C-16A538385E4A}" Name="Invocation.90" NameU="Invocation.90" Master="3">
+					<XForm>
+						<PinX Unit="IN">5.135237681882295</PinX>
+						<PinY Unit="IN">5.249999999999997</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="83" UniqueID="{5436EF36-4971-48BD-9608-0D3E24471FBE}" Name="Function / subroutine.86" NameU="Function / subroutine.86" Master="0">
+					<Text>echo “&lt;p&gt;” . $person[‘Description’] . “&lt;/p&gt;”;</Text>
+					<XForm>
+						<PinX Unit="IN">4.735237681882298</PinX>
+						<PinY Unit="IN">3.733928571428569</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="84" UniqueID="{37A8971D-1FAE-47AE-B4FF-C05D4C308D78}" Name="Function / subroutine.104" NameU="Function / subroutine.104" Master="0">
+					<Text>Project: ARGO
+Creating a users database: Providing a Register page</Text>
+					<XForm>
+						<PinX Unit="IN">4.625000000000002</PinX>
+						<PinY Unit="IN">11.100000000000000</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

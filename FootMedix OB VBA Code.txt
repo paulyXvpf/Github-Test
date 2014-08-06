@@ -1,0 +1,39 @@
+------------------------------------------------------------------
+FootMedix Outbound - Delete all rows that are NOT dispo'd as Sale:
+******************************************************************
+
+
+
+
+FIRST, load up this subroutine with these steps
+-----------------------------------------------
+Alt F11 opens VB editor
+Insert / Module
+Paste in Code below
+-----------------------------------------------
+
+
+Sub FootMedix_OB() 
+Dim c As Range 
+Dim SrchRng 
+
+
+'FootMedix dispositions that are not "Sale" should be deleted.
+
+
+ChDir "C:\Users\Paul\Desktop\Leads"
+    ActiveWorkbook.SaveAs Filename:= _
+        "C:\Users\Paul\Desktop\Leads\FootMedix_OB.csv", FileFormat:=xlCSV, _
+        CreateBackup:=False
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+   
+
+Set SrchRng = ActiveSheet.Range("P1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("Sale", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+End Sub

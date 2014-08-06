@@ -1,0 +1,29 @@
+Sub Fibro_Wellness()
+'
+' Fibro_Wellness Macro
+'
+
+'
+    Columns("N:N").ColumnWidth = 21
+    Columns("J:J").ColumnWidth = 18.57
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Columns("J:J").Select
+    Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:=") ", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="-", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Columns("N:N").Select
+    Selection.Replace What:= _
+        "*** WRONG CAMPAIGN SELECTED *** USE ARGO_Inbound  ***", Replacement:= _
+        "FibroWP-WEB", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, _
+        SearchFormat:=False, ReplaceFormat:=False
+    ChDir "C:\Users\Paul\Desktop\Leads"
+    ActiveWorkbook.SaveAs Filename:="C:\Users\Paul\Desktop\Leads\Fibro.csv", _
+        FileFormat:=xlCSV, CreateBackup:=False
+End Sub

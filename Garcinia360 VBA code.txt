@@ -1,0 +1,61 @@
+Sub Garcinia360() 
+Dim c As Range 
+Dim SrchRng 
+
+
+' Load up this subroutine with these steps
+' Alt F11 opens VB editor
+' Insert / Module
+' Paste in Code
+
+
+'Need to delete the Maxx Test Lead campaign ids 1, 13, and 31
+
+
+ActiveWorkbook.SaveAs Filename:="C:\Users\Paul\Desktop\Leads\Garcinia360.csv" _
+        , FileFormat:=xlCSV, CreateBackup:=False
+
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("1", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("13", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+Set SrchRng = ActiveSheet.Range("O1", ActiveSheet.Range("O65536").End(xlUp)) 
+Do 
+Set c = SrchRng.Find("31", LookIn:=xlValues) 
+If Not c Is Nothing Then c.EntireRow.Delete 
+Loop While Not c Is Nothing 
+
+
+
+    Rows("1:1").Select
+    Selection.Delete Shift:=xlUp
+    Columns("J:J").ColumnWidth = 19.71
+    Columns("J:J").Select
+    Selection.Replace What:="(", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:=") ", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    Selection.Replace What:="-", Replacement:="", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+    ChDir "C:\Users\Paul\Desktop\Leads"
+
+
+
+
+    
+End Sub
